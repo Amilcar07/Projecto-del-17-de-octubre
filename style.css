@@ -1,12 +1,15 @@
 :root{
-    --azul3: #90b1e2;
+    --cuadrofundo0: #3966ab;
     --azul2: #4a5a74;
+    --cuadrofundo1: #90b1e2;
     --azul1: #303f97;
+    --branco: #ffff;
 }
 
 body {
-    background-image: url('images/over-50-frutiger-aero-wallpapers-2008ify-your-pc-v0-9ckfyod2nz9b1.jpg');
+    background-image: url('https://www.alura.com.br/artigos/assets/alura-challenges-bi/alura-challenges.jpeg');
     font-family: 'Roboto Slab';
+    background-size: cover;
 }
 
 #container {
@@ -20,7 +23,7 @@ body {
 .cartao {
     margin: 1rem 1rem;
     border-radius: 0.8em;
-    background-color: #303f97;
+    background-color: var(--cuadrofundo0);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
@@ -28,7 +31,8 @@ body {
 
 .cartao-conteudo {
     text-align: center;
-    background-color: #90b1e2;
+    border-radius: 0.8em;
+    background-color: var(--cuadrofundo1);
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
@@ -39,7 +43,7 @@ body {
     color: black;
     text-align: left;
     position: absolute;
-    border: 2px solid #303f97;
+    border: 2px solid var(--azul3);
     padding: 0.5em;
     margin: 0.6rem;
     border-radius: 0.4em;
@@ -74,7 +78,7 @@ body {
 }
 
 footer {
-    background-color: #000000;
+    background-color: black;
     color: white;
     position: fixed;
     bottom: 0;
