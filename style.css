@@ -23,23 +23,24 @@ body {
 .cartao {
     margin: 1rem 1rem;
     border-radius: 0.8em;
-    background-color: var(--cuadrofundo0);
+    background-image: linear-gradient(to bottom right, #16315a, #1b344d);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);
 }
 
 .cartao-conteudo {
     text-align: center;
     border-radius: 0.8em;
-    background-color: var(--cuadrofundo1);
+    background-image: linear-gradient(to bottom right, #90b1e2, #244a83);
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
 }
 
 .cartao-conteudo h3 {
-    background-color: white;
+    background-image: radial-gradient(#fefeff, #8c94a1);
     color: black;
     text-align: left;
     position: absolute;
@@ -91,4 +92,18 @@ footer p {
     text-align: center;
     font-size: 0.6rem;
     margin-top: 0.5rem;
+}
+
+@media (max-width: 560px) {
+    body {
+        background: url('img/mobile.webp');
+    }
+
+    .cartao {
+        flex: 1 0 calc(100% - 1rem);
+    }
+
+    .cartao-conteudo h3 {
+        font-size: 3.8vw;
+    }
 }
